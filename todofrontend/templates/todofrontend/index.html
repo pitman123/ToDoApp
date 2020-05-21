@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TO DO</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'todofrontend/style.css' %}" type="text/css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div id="task-container">
+            <div id="form-wrapper">
+                <form id="form">
+                    <div class="flex-wrapper">
+                        <div style="flex: 6">
+                            <input id="title" class="form-control" type="text" name="title" placeholder="Add task">
+                        </div>
+                        <div style="flex: 1">
+                            <input id="submit" class="btn" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="list-wrapper">
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="{% static 'todofrontend/main.js' %}"></script>
+</body>
+</html>
